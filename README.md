@@ -145,17 +145,28 @@ The generated file can safely replace the original bookmark file.
 
 # Project Structure
 
-``` text
+# Project Structure
+
+# Project Structure
+
+```text
 src
-├── controller
-├── service
-├── parser
-├── validator
-├── generator
-├── model
-└── resources
-    ├── static
-    └── application.properties
+├── main
+│   ├── java
+│   │   └── com.aman.bookmark_cleaner
+│   │       ├── controller
+│   │       ├── model
+│   │       │   └── BookmarkNode.java
+│   │       ├── parser
+│   │       ├── service
+│   │       └── BookmarkCleanerApplication.java
+│   └── resources
+│       ├── static
+│       ├── templates
+│       └── application.properties
+└── test
+    └── java
+        └── com.aman.bookmark_cleaner
 ```
 
 ------------------------------------------------------------------------
@@ -181,10 +192,9 @@ between the frontend and backend.
 
 # Requirements
 
--   Java 21 *(Update if your project uses a different version)*
+-   Java 25 
 -   Maven
 -   Spring Boot
--   Exported browser bookmark file
 
 ------------------------------------------------------------------------
 
@@ -193,7 +203,7 @@ between the frontend and backend.
 ## Clone the Repository
 
 ``` bash
-git clone https://github.com/your-username/smart-bookmark-cleaner.git
+git clone https://github.com/aman-a25/BookmarkCleaner.git
 ```
 
 ## Navigate into the Project
@@ -213,9 +223,6 @@ mvn clean install
 ``` bash
 mvn spring-boot:run
 ```
-
-Open the application in your browser and upload your exported bookmark
-file.
 
 ------------------------------------------------------------------------
 
@@ -242,7 +249,7 @@ This project helped strengthen practical knowledge of:
 -   JSON Parsing
 -   Recursive Tree Traversal
 -   HTTP Communication
--   Exception Handling
+-   Global Exception Handling
 -   Clean Project Architecture
 -   Backend and Frontend Integration
 
