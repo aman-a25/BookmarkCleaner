@@ -1,4 +1,4 @@
-# Smart Bookmark Cleaner
+# Bookmark Cleaner
 
 > A Spring Boot application that automatically validates, cleans, and
 > updates browser bookmarks while preserving the original folder
@@ -8,7 +8,7 @@
 
 ## Overview
 
-Smart Bookmark Cleaner is a backend-focused Spring Boot project built to
+Bookmark Cleaner is a backend-focused Spring Boot project built to
 solve a real-world problem: maintaining a large collection of browser
 bookmarks.
 
@@ -17,8 +17,8 @@ changes, redirects, or broken links. Manually validating hundreds of
 bookmarks---especially when they are organized into deeply nested
 folders---is tedious and time-consuming.
 
-This application automates the entire process by reading an exported
-bookmark file, validating every bookmark, updating redirected URLs,
+This application automates the entire process by reading the bookmark files saved by the browser, 
+validating every bookmark, updating redirected URLs,
 removing invalid bookmarks, and generating a cleaned bookmark file while
 preserving the original folder structure.
 
@@ -51,10 +51,8 @@ serving as a practical Spring Boot learning project.
 ------------------------------------------------------------------------
 
 # Problem Statement
-
-Given an exported browser bookmark file:
-
--   Read and parse the bookmark structure.
+-   Read the bookmark files saved by browser directly
+-   parse the bookmark structure.
 -   Preserve the complete folder hierarchy.
 -   Validate every bookmark URL.
 -   Remove bookmarks that are no longer accessible.
@@ -127,7 +125,7 @@ The generated file can safely replace the original bookmark file.
 -   Java
 -   Spring Boot
 -   Maven
--   Embedded Tomcat
+-   Embedded Tomcat server
 -   Jackson (JSON Processing)
 -   HTML
 -   CSS
@@ -142,10 +140,6 @@ The generated file can safely replace the original bookmark file.
 -   Spring Boot Starter Test
 
 ------------------------------------------------------------------------
-
-# Project Structure
-
-# Project Structure
 
 # Project Structure
 
